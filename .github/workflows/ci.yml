@@ -1,0 +1,19 @@
+name: hai babe
+on:
+    push
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout
+          uses: actions/checkout@v4
+        - name: steup node
+          uses: actions/setup-node@v4
+        - name: ls
+          run: ls -lrth
+        - name: install dependencies
+          run: npm install
+        - name: ls1
+          run: ls -lrth
+        - name: run js
+          uses: ./
