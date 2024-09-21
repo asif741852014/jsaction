@@ -1,5 +1,5 @@
 name: hai
 description: nmbaefhkife
 runs:
-  using: node
+  using: node12
   main: index.js
